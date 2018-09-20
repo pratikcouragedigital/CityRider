@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emptyTextViewTitle"
+                android:text="Message.!!!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptyTextView"
+            android:layout_below="@+id/titleLayout"
+            android:textColor="@color/colorred"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/empty">-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

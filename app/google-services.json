@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "865301373893",
+    "firebase_url": "https://cityriders-3dc2b.firebaseio.com",
+    "project_id": "cityriders-3dc2b",
+    "storage_bucket": "cityriders-3dc2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865301373893:android:7878924dfc72987c",
+        "android_client_info": {
+          "package_name": "mobitechs.cityriders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865301373893-4l1j2a1t0ujq8np80oibtd1pe4nmpm59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobitechs.cityriders",
+            "certificate_hash": "04b6b7c046b7e9f688ab20db85392faedc34dd7d"
+          }
+        },
+        {
+          "client_id": "865301373893-jhekf2hcikapj61qqj197clhhrrr9sbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnIAqzNEjw_ZJjqsRenVctNQMrIwHtAJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865301373893-jhekf2hcikapj61qqj197clhhrrr9sbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobitechs.cityriders">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".firebase.Firebase_Offline_DB"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBnIAqzNEjw_ZJjqsRenVctNQMrIwHtAJw"/>
+
+        <service
+            android:name="mobitechs.cityriders.firebase.MyFirebaseMesagingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="mobitechs.cityriders.firebase.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home"/>
+        <!--<activity android:name=".Upcoming_Riding_List" android:label="Upcoming Ride Details"/>-->
+        <activity android:name=".Map"/>
+        <activity android:name=".Create_Next_Ride" />
+        <activity android:name=".IsAdmin" android:noHistory="true"/>
+        <activity android:name=".Rider_List" android:noHistory="true"/>
+        <activity android:name=".YouTubeFragmentActivity"/>
+        <activity android:name=".Add_Rider" android:label="Add Rider Details" android:noHistory="true"/>
+        <activity android:name=".Join_CityRiders" android:label="Join with CityRiders" android:noHistory="true"/>
+    </application>
+
+</manifest>

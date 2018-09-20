@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/_1sdp"
+            card_view:cardElevation="@dimen/_15sdp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/ridingPlaceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/layoutHeadingBg"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/txtRidingPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Lavasa"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mapLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ridingPlaceLayout">
+
+                    <com.google.android.gms.maps.MapView
+                        xmlns:map="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ridingMap"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:onClick=""
+                        map:liteMode="true">
+
+
+                    </com.google.android.gms.maps.MapView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ridingDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mapLayout">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/meetUpPlaceLayout">
+                            <TextView
+                                android:id="@+id/lblMeetUpPlace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Meet Up Place: "
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtMeetUpPlace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_toRightOf="@+id/lblMeetUpPlace"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/lblRidingDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/meetUpPlaceLayout"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Date: "
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtRidingDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/meetUpPlaceLayout"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_toRightOf="@+id/lblRidingDate"
+                            android:hint="12-Des-2016"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/lblNote"
+                            android:text="*note :"
+                            android:textColor="@color/btnbgcolor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lblRidingDate"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textSize="@dimen/_13sdp" />
+                        <TextView
+                            android:id="@+id/txtNote"
+                            android:layout_toRightOf="@+id/lblNote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lblRidingDate"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:id="@+id/deleteListLayout"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/delete"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

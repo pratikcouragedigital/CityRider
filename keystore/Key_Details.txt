@@ -1,0 +1,12 @@
+key alis  release_key
+key pass and key store pass city@17
+
+
+Project Name    TheCityRiders	
+version 	5.0.1	
+versionCode 	20	
+keyAlias 	key0	
+keyPassword 	city@17	
+storePassword 	city@17	
+storeFile	city_riderskey.jks	
+applicationId	mobitechs.cityriders
